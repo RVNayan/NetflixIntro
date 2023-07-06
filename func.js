@@ -7,7 +7,7 @@ gsap.set(".l1, .l2, .l3", { opacity: 0 });
 	  defaults: { duration: 0.5 },
 	  onStart: () => {
 	    sound.play(); // Start playing the background sound when the animation starts
-	    generateLines();
+	    setTimeout(generateLines,1000);
 	  },
 	  onComplete: () => {
 	    sound.pause(); // Pause the background sound when the animation completes
@@ -24,7 +24,7 @@ gsap.set(".l1, .l2, .l3", { opacity: 0 });
 	reverseTimeline
 	  .fromTo(".l2", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0, delay: 0.5 })
 	  .fromTo(".l3", { height: "220px" }, { height: 0, opacity: 0 })
-	  .fromTo(".l1", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0 });
+	  .fromTo(".l1", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0.3 });
 
 	timeline.add(reverseTimeline); // Add the reverse timeline to play in reverse after the initial sequence
 

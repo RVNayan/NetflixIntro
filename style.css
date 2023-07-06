@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: row;
   animation: zoomAnimation 5s;
-  animation-delay: 1s; /* Adjust the delay to match GSAP animation delay */
+  animation-delay: 2.75s; /* Adjust the delay to match GSAP animation delay */
   transform-origin: center;
 }
 
@@ -89,12 +89,12 @@
       opacity: 1;
 
     }
-    70% {
-      transform: scale(25);
+    50% {
+      transform: scale(100);
       opacity:1;
     }
     100% {
-      transform: scale(1000);
+      transform: scale(200);
       opacity: 0;
     }
   }
