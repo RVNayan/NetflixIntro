@@ -1,5 +1,5 @@
 
-Here's an awesome recreation of the Internet's Popular Video Streaming platform 'Netflix's intro complete with the traditional drum beats and zooming lines of spectrum!!!
+Here's an awesome recreation of the Internet's most Popular Video Streaming platform 'Netflix's intro, complete with the traditional drum beats and the zooming lines of spectrum!!!
 
 ![Trail](trial.gif)
 
