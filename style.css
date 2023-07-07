@@ -15,14 +15,14 @@
 
   .background .logo {
     width: 150px;
-    height: 300px; /* Update the height value */
+    height: 300px; 
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 25vh;
     animation-name: logoScale;
     animation-duration: 1.5s;
-    animation-delay: 1s; /* Adjust the delay as needed */
+    animation-delay: 1s; /* Adjust the delay for logo*/
     animation-fill-mode: both;
     z-index:2;
   }
