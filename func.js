@@ -10,8 +10,10 @@ gsap.set(".l1, .l2, .l3", { opacity: 0 });
 	    setTimeout(generateLines,1000);
 	  },
 	  onComplete: () => {
-	    sound.pause(); // Pause the background sound when the animation completes
-	     // Generate the lines after the animation completes
+	    sound.pause(); 
+	    const linesContainer = document.querySelector(".lines");
+	    gsap.to(linesContainer, { opacity: 0, duration: 1, delay: 2, onComplete: hideElement });
+
 	  }
 	});
 
@@ -24,7 +26,7 @@ gsap.set(".l1, .l2, .l3", { opacity: 0 });
 	reverseTimeline
 	  .fromTo(".l2", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0, delay: 0.5 })
 	  .fromTo(".l3", { height: "220px" }, { height: 0, opacity: 0 })
-	  .fromTo(".l1", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0.3 });
+	  .fromTo(".l1", { transform: "scaleY(1)" }, { transform: "scaleY(0)", opacity: 0 });
 
 	timeline.add(reverseTimeline); // Add the reverse timeline to play in reverse after the initial sequence
 
@@ -47,7 +49,10 @@ const l1Element = document.querySelector('.l1');
 
 // Get the position of the .l1 element relative to the viewport
 const l1Position = l1Element.getBoundingClientRect();
-
+function hideElement() {
+  // Set display none to hide the linesContainer
+  linesContainer.style.display = "none";
+}
 console.log('L1 position:', l1Position);
 
 
