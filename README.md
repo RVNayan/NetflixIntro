@@ -1,5 +1,5 @@
 
-Here's an awesome intro of Internet's most Popular Video Streaming platform Netflix!, complete with the traditional drum beats and the zooming lines of spectrum!!!
+Here's an awesome intro of Internet's most Popular Video Streaming platform Netflix!, complete with the traditional drum beats and the zooming lines!
 
 ![Trail](trial.gif)
 
